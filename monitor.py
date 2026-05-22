@@ -44,12 +44,8 @@ with sync_playwright() as p:
 
 if found_months:
     message = (
-        "VHS Bamberg Update Detected!
-
-"
-        f"Found months: {', '.join(found_months)}
-
-"
+        "VHS Bamberg Update Detected!\n\n"
+        f"Found months: {', '.join(found_months)}\n\n"
         f"{URL}"
     )
 
