@@ -5,6 +5,7 @@ import os
 URL = "https://www.vhs-bamberg.de/p/502-CAT-KAT4576046"
 
 TARGET_MONTHS = [
+    "Juli",
     "August",
     "September",
     "Oktober",

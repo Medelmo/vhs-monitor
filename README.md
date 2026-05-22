@@ -1,6 +1,7 @@
 ﻿# VHS Bamberg Monitor
 
 Automatically checks the VHS Bamberg page daily for:
+- Juli
 - August
 - September
 - Oktober
