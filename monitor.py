@@ -4,12 +4,13 @@ import os
 
 URL = "https://www.vhs-bamberg.de/p/502-CAT-KAT4576046"
 
-TARGET_MONTHS = [
-    "Juli",
-    "August",
-    "September",
-    "Oktober",
-    "November"
+TARGET_DATE_STRINGS = [
+    "06.2026",
+    "07.2026",
+    "08.2026",
+    "09.2026",
+    "10.2026",
+    "11.2026"
 ]
 
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
@@ -34,18 +35,18 @@ with sync_playwright() as p:
 
     content = page.content()
 
-    found_months = []
+    found_dates = []
 
-    for month in TARGET_MONTHS:
-        if month in content:
-            found_months.append(month)
+    for date_string in TARGET_DATE_STRINGS:
+        if date_string in content:
+            found_dates.append(date_string)
 
     browser.close()
 
-if found_months:
+if found_dates:
     message = (
         "VHS Bamberg Update Detected!\n\n"
-        f"Found months: {', '.join(found_months)}\n\n"
+        f"Found dates: {', '.join(found_dates)}\n\n"
         f"{URL}"
     )
 
