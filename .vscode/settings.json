@@ -1,0 +1,16 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^python -m py_compile monitor\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^py -3 -m py_compile monitor\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^where\\.exe python ; where\\.exe py ; where\\.exe python3$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
