@@ -5,12 +5,11 @@ import os
 URL = "https://www.vhs-bamberg.de/p/502-CAT-KAT4576046"
 
 TARGET_DATE_STRINGS = [
-    "06.2026",
-    "07.2026",
     "08.2026",
     "09.2026",
     "10.2026",
-    "11.2026"
+    "11.2026",
+    "12.2026"
 ]
 
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
